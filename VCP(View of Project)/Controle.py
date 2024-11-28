@@ -1,5 +1,5 @@
 import mysql.connector
-
+import os
 class BancoDeDados:
     def __init__(self, host, user, password, database):
         self.conexao = mysql.connector.connect(
@@ -66,17 +66,18 @@ def verificacao():
     else:
         print("ACESSO NEGADO,TENTE NOVAMENTE")
         return False
-
             
-# def menu():
-#     print("============MENU=============")
-#     print("1. VER DISPOSITIVOS CONECTADOS A BASE DE DADOS")
-#     print("2. CONFIGURAÇÃO DE CONTA")
-#     print("3. Sair")
-#     print("=============================")
-#     escolha = input("")
-#     return escolha
+def menu():
+    os.system('cls')
+    print("=========   MENU  ==========")
+    print("1. VER DISPOSITIVOS CONECTADOS A BASE DE DADOS")
+    print("2. CONFIGURAÇÕES DE CONTA")
+    print("3. Sair")
+    print("=============================")
 
+    escolha = input("DIGITE UMA DAS OPÇÕES: ")
+    if escolha == 3:
+        return escolha == False
 
 #Classe Do Banco de Dados
 db = BancoDeDados(
@@ -104,15 +105,19 @@ user1 = Usuario(userId='',nome='',email='',senha='')
 # else:
 #     print("Dispositivo não encontrado no banco de dados.")
 
+escolha = True
+
 if __name__ == "__main__":
 
-    while not verificacao():
-            print("TESTANDO GITHUB sfvbsbbvsvs")
-        # menu()
-        # while escolha != False:
-        #     print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
-        #     aparelhos = db.aparelhosConectados()
-        #     for aparelho in aparelhos:
-        #         print(aparelho)
+    while verificacao():
+
+        while escolha:
+            menu()
+            # print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
+            # aparelhos = db.aparelhosConectados()
+            # for aparelho in aparelhos:
+            #     print(aparelho)
+
+            
 
     # ID = input("Digite o ID da coleira")
