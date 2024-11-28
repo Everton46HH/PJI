@@ -113,6 +113,7 @@ if __name__ == "__main__":
 
         while escolha:
             menu()
+            print("njsndvfdu")
             # print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
             # aparelhos = db.aparelhosConectados()
             # for aparelho in aparelhos:
