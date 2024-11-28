@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.RYLR406 LoRa
 2. NEO6M GPS Module
 3. ATMEGA328P
@@ -20,3 +21,28 @@ https://produto.mercadolivre.com.br/MLB-885719858-modulo-node-mcu-esp8266-_JM#po
 
 
 Valor estimado R$ 478,18. 
+=======
+1.RYLR406 LoRa
+2. NEO6M GPS Module
+3. ATMEGA328P
+4. Modulo Node Mcu Esp8266
+5. Resistores 1K e 2K e Fios
+
+1 - 100% novo módulo de comunicação DIP de grau industrial RYLR406 RYLR896 - 192,79 + 18,05 + 86,01(preçoPeça + frete + imposto)
+ https://pt.aliexpress.com/item/1005008074550530.html?spm=a2g0o.productlist.main.5.3e5a1a13jmgwON&algo_pvid=708daad6-a111-455e-98b2-fde51896fd64&utparam-url=scene%3Asearch%7Cquery_from%3A
+
+2 - Módulo GPS GY-NEO6MV2 com Antena - 55,69 + 27,64 (preçoPeça + frete)
+https://produto.mercadolivre.com.br/MLB-826082970-modulo-gps-neo-6m-ublox-25-apm-quadcopter-arduino-drone-_JM#is_advertising=true&position=1&search_layout=grid&type=pad&tracking_id=6a742d9d-eb2e-4997-8068-0f0379c24821&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=Yzk4NGFlY2EtYzdhOS00MWI5LWFhOTgtOTI4ODA4Y2YzYTIy
+
+3 - Nano 3.0 Compatível Com O Controlador Para arduino CH340 USB driver 16Mhz v3.0 ATMEGA328P - 19,01 + 15,00 (preçoPeça + frete)
+https://shopee.com.br/Nano-3.0-Compat%C3%ADvel-Com-O-Controlador-Para-arduino-CH340-USB-driver-16Mhz-v3.0-ATMEGA328P-i.539896918.25535167636
+
+4 - Modulo Node Mcu Esp8266 - 39,99 + 17,00 (preçoPeça + frete)
+https://produto.mercadolivre.com.br/MLB-885719858-modulo-node-mcu-esp8266-_JM#polycard_client=search-nordic&position=16&search_layout=grid&type=item&tracking_id=826df2dd-95a7-4366-9942-f23bc35e8e78
+
+5 - Resitores(1k e 2k) + Fios - 7,00$
+
+6 - Muita fé
+
+PreçoTotal ≅ 480 Lulinhas
+>>>>>>> 84a39126e1e01c3a79092a1946bef111e7091b95

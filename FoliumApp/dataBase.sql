@@ -24,7 +24,11 @@ INSERT INTO Dispositivo	 (idDispositivo, nomeDispositivo, latitude, longitude)
 VALUES 
 (1, 'Rex', 0, 0);
 
+<<<<<<< HEAD
 UPDATE Dispositivo
+=======
+UPDATE Usuario
+>>>>>>> 84a39126e1e01c3a79092a1946bef111e7091b95
 SET latitude = '4.86484812877389'
 WHERE idDispositivo = 1;
 commit;
