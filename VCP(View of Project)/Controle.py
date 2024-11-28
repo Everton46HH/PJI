@@ -107,7 +107,7 @@ user1 = Usuario(userId='',nome='',email='',senha='')
 if __name__ == "__main__":
 
     while not verificacao():
-            print("TESTANDO GITHUB f9dasdfuhefuigwfsdfrigdfhshfw")
+            print("TESTANDO GITHUB f9dasdsaddfuhefuigwfsdfrigdfhshfw")
         # menu()
         # while escolha != False:
         #     print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
