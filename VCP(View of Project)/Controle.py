@@ -61,9 +61,11 @@ def verificacao():
     senha = senha[0]
 
     if userSenha == senha:
+        os.system('cls')
         print("ACESSO PERMTIDO :)")
         return True
     else:
+        os.system('cls')
         print("ACESSO NEGADO,TENTE NOVAMENTE")
         return False
             
@@ -75,9 +77,14 @@ def menu():
     print("3. Sair")
     print("=============================")
 
-    escolha = input("DIGITE UMA DAS OPÇÕES: ")
-    if escolha == 3:
-        return escolha == False
+    # escolha = input("DIGITE UMA DAS OPÇÕES: ")
+
+    # if escolha == 1:
+    #     return True
+
+    # elif escolha == 3:
+    #     print("PROGRAMA FINALIZADO!")
+    #     return False
 
 #Classe Do Banco de Dados
 db = BancoDeDados(
@@ -107,18 +114,18 @@ user1 = Usuario(userId='',nome='',email='',senha='')
 
 escolha = True
 
-if __name__ == "__main__":
+while __name__ == "__main__":
 
-    while verificacao():
+    if verificacao():
+        menu()
 
-        while escolha:
-            menu()
-            print("njsndvfdu")
-            # print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
-            # aparelhos = db.aparelhosConectados()
-            # for aparelho in aparelhos:
-            #     print(aparelho)
+        escolha = int(input("DIGITE UMA OPÇÃO: "))
 
-            
+        if escolha==1:
+
+            print("OS DISPOSITIVOS CONECTADOS A BASE DE DADOS SÂO: ")
+            aparelhos = db.aparelhosConectados()
+            for aparelho in aparelhos:
+                print(aparelho)
 
     # ID = input("Digite o ID da coleira")
