@@ -1,7 +1,6 @@
 import mysql.connector
 import folium
 import time
-import math
 
 # def haversine(lat1, lon1, lat2, lon2):
 #     R = 6371000
@@ -20,6 +19,7 @@ def atualizar_mapa():
         password="Janeiro.01",
         database="PeTAG"
     )
+
     cursor = mydb.cursor()
     cursor.execute("SELECT latitude, longitude, nomeDispositivo FROM Dispositivo WHERE idDispositivo = 1")
     resultado = cursor.fetchone()
@@ -51,4 +51,4 @@ def loop_atualizacao(intervalo):
         atualizar_mapa()
         time.sleep(intervalo)
 
-loop_atualizacao(10)
+loop_atualizacao(15)
