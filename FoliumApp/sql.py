@@ -51,4 +51,4 @@ def loop_atualizacao(intervalo):
         atualizar_mapa()
         time.sleep(intervalo)
 
-loop_atualizacao(15)
+loop_atualizacao(5)

@@ -1,7 +1,7 @@
 import mysql.connector
 import os
 import time
-
+senha = 0
 
 class BancoDeDados:
     def __init__(self, host, user, password, database):
@@ -69,8 +69,9 @@ def verificacao():
 
     #Puxei a senha registrada do Banco de Dados usando o ID.
     db.conectar() #mexi aqui
-    db.cursor.execute(f"SELECT senha FROM Usuario WHERE userID = {userId}")
-    senha = db.cursor.fetchone()
+    db.cursor.execute(f"SELECT nome,senha FROM Usuario WHERE userID = {userId}")
+    data = db.cursor.fetchone()
+    senha = data[1]
     db.cursor.close()
 
     if senha is None:
@@ -78,12 +79,10 @@ def verificacao():
         print("ID DE USUARIO NÃO ENCONTRADO")
         return False
     
-    #Ae como o senha é igual a uma tupla e peguei primeiro index dele 
-    senha = senha[0]
-    
     if userSenha == senha:
         os.system('cls')
         print("ACESSO PERMTIDO :)")
+        print(data[0],"SEJA BEM-VINDO")
         return True
     else:
         os.system('cls')
@@ -140,7 +139,7 @@ while True:
                 db.cursor.close()
                 for aparelho in aparelhos:
                     print(aparelho)
-                time.sleep(6)
+                time.sleep(5)
 
             
             if escolha == 2:
@@ -161,16 +160,13 @@ while True:
                         longitude=longitude 
                     )
                         
-                for i in range(0, 100, 1):
+                for i in range(0, 1000, 1):
                     registro = dispositivo1.getData()
 
-                    #essa linha de código ,pega a loc atual e salva no historico :)
-                    #quebrei a cabeça pensando nisso 
                     print(registro)
                     db.conectar()
                     db.cursor.execute(f"insert into HistoricoCoordenadas(idDispositivo,latitude,longitude) values({registro[0]}, {registro[2]}, {registro[3]})")
                     db.cursor.close()
-
                     time.sleep(0.5)
                     db.conexao.commit()
 
